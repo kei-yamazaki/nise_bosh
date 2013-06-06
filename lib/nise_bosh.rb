@@ -14,7 +14,7 @@ class NiseBosh
 
     @log = logger
     @ip_address = @options[:ip_address]
-    @ip_address ||= %x[ip -4 -o address show].match('inet ([\d.]+)/.*? scope global') { |md| md[1] }
+    @ip_address ||= "127.0.0.1"
     @index ||=  @options[:index] || 0
   end
 
