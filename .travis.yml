@@ -8,5 +8,8 @@ before_install:
   - sudo ./bin/init
 
 script:
-  - export rvmsudo_secure_path=0
+  - export rvmsudo_secure_path=1
+  - rvmsudo ruby --version
+  - rvmsudo gem --version
+  - rvmsudo bundle --version
   - rvmsudo -E bundle exec rspec spec
