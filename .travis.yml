@@ -17,4 +17,4 @@ script:
   - rvmsudo gem --version
   - rvmsudo bundle --version
   - rvmsudo gem install bundle
-  - rvmsudo bundle _1.5.2_ exec rspec spec
+  - rvmsudo -E bundle _1.5.2_ exec rspec spec
