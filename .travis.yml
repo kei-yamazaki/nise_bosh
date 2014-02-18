@@ -10,6 +10,7 @@ before_install:
 script:
   - export rvmsudo_secure_path=1
   - rvmsudo ruby --version
+  - rvmsudo gem list
   - rvmsudo gem --version
   - rvmsudo bundle --version
   - rvmsudo -E bundle exec rspec spec
